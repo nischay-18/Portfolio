@@ -35,7 +35,7 @@ export const TOTAL_SCREENS = [
 
   },
   {
-    screen_name: "Projects",
+    screen_name: "projects",
     component: projects,
 
   },
@@ -45,7 +45,7 @@ export const TOTAL_SCREENS = [
 
   },
   {
-    screen_name: "Certifications",
+    screen_name: "certifications",
     component: Certifications,
 
   },
