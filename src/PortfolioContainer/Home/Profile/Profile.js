@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 import "./Profile.css";
 import pdf from "../../../assets/Resume.pdf"
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
@@ -19,23 +19,34 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Data Enthusiast 📊",
-                    1000,
-                    "Machine Learning 🤖",
-                    1000,
-                    "Deep Learning 🧠",
-                    1000,
-                    "Natural Language Processing 📝",
-                    1000,
-                    "Big Data Analyst 💾",
-                    1000,
-                    "Cloud Computing Enthusiast",
-                    1000,
-                  ]}
-                />
+               
+                <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Data Enthusiast 📊")
+                    .pauseFor(200)
+                    .deleteAll()
+                    .typeString("Machine Learning 🤖")
+                    .pauseFor(200)
+                    .deleteAll()
+                    .typeString("Deep Learning 🧠")
+                    .pauseFor(200)
+                    .deleteAll()
+                    .typeString("Natural Language Processing 📝")
+                    .pauseFor(200)
+                    .deleteAll()
+                    .typeString("Cloud Computing Enthusiast")
+                    .pauseFor(200)
+                    .deleteAll()
+                    .typeString("Big Data Analyst 💾")
+                    .pauseFor(200)
+                    .start();
+                }}
+                options={{
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
               </h1>
             </span>
             <span className="profile-role-tagline">
