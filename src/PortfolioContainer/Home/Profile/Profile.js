@@ -23,22 +23,22 @@ export default function Profile() {
                 <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("Data Enthusiast 📊")
+                    .typeString("Data Enthusiast")
                     .pauseFor(200)
                     .deleteAll()
-                    .typeString("Machine Learning 🤖")
+                    .typeString("Machine Learning")
                     .pauseFor(200)
                     .deleteAll()
-                    .typeString("Deep Learning 🧠")
+                    .typeString("Deep Learning")
                     .pauseFor(200)
                     .deleteAll()
-                    .typeString("Natural Language Processing 📝")
+                    .typeString("Natural Language Processing")
                     .pauseFor(200)
                     .deleteAll()
                     .typeString("Cloud Computing Enthusiast")
                     .pauseFor(200)
                     .deleteAll()
-                    .typeString("Big Data Analyst 💾")
+                    .typeString("Big Data Analyst")
                     .pauseFor(200)
                     .start();
                 }}
