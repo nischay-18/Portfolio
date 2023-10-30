@@ -120,7 +120,7 @@ const ProjectCard = ({ title, description, technologies, image, githubLink }) =>
 );
 
 const projects = () => (
-    <div id="projects">
+    <div id="Projects">
     <div className="main-container-pr projects-main-container container">    
     <ScreenHeading subHeading={""} title={"Projects"} />
     <div className="projects-central-form1">

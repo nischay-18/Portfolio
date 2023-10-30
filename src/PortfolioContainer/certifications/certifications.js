@@ -46,7 +46,7 @@ function certifications() {
 
     
     return (
-        <div id="certifications">
+        <div id="Certifications">
         <div className="main-container-01">
                 <ScreenHeading subHeading={""} title={"Certifications"} />
                 
