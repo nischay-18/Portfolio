@@ -1,0 +1,131 @@
+
+.projects-main-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.projects-central-form1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px 0;
+    border-radius: 12px;
+    background-color: white;
+    
+}
+.project-card-container {
+    display: flex;
+    flex-direction: column; /* Set the direction of the content to be column-wise */
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0px 10px -2px #1f2235;
+}
+
+
+
+.project-card-container img {
+    width: 100%;     /* Ensure the image takes the full width of the container */
+    height: 200px;   /* Fixed height for all images. Adjust this as needed. */
+    object-fit: cover;   /* Ensures the image covers the entire space without distortion */
+    display: block;  /* Removes any potential whitespace beneath the image */
+}
+
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-details {
+    padding: 10px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.technology-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.technology-item {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.project-description {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.github-link {
+    width: 30%;
+    padding: 8px 12px;
+    background-color: orangered;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: block;      /* Already existing rule */
+    margin: 10px auto 10px auto;      /* Added margin-top and margin-bottom to give it some space from the content */
+    text-align: center;  /* Already existing rule */
+    margin-top: auto;    /* This will push the GitHub link to the bottom of the .project-card-container */
+}
+
+.github-link:hover {
+    background-color: orange;
+    color: white; /* same as the default color */
+}
+
+/* Default styles for desktop and larger screens */
+.projects-central-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px 0;
+    border-radius: 12px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects-central-form {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        /* if you prefer 3 cards per row, then use grid-template-columns: repeat(3, 1fr); */
+    }
+}
+
+/* Mobile: 1 card per row. Adjust the max-width value as needed */
+
+@media only screen and (max-width: 768px) {
+    .projects-central-form1 {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        gap: 20px;
+        padding: 20px 0;
+        border-radius: 12px;
+        background-color: white; 
+    }
+
+    /* Adjusting the image height for mobile */
+    .project-card-container img {
+        height: 150px; 
+    }
+
+    /* Adjust text size and padding for mobile */
+    .project-details {
+        padding: 8px;
+    }
+    .project-title {
+        font-size: 16px;
+    }
+}

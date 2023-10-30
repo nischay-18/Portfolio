@@ -1,0 +1,110 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  height: 149px;
+  color: var(--white);
+  /* border: #ffffff solid; */
+  /* padding: 20px; */
+}
+.header-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  color: var(--white);
+  /* border: #ffffff solid; */
+}
+.header-logo {
+  font-size: 2rem;
+  font-family: "Poppins ExtraBold";
+  color: var(--white);
+  cursor: pointer;
+  /* border: #ffffff solid; */
+}
+
+.header-logo:hover{
+  color: orangered;
+}
+.header-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  /* align-items: center; */
+
+  /* border: #ffffff solid; */
+}
+.header-option {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.header-hamburger {
+  display: none;
+  color: var(--white);
+}
+.header-option-seperator {
+  margin: 0 15px 0 0;
+  color: var(--white);
+}
+.selected-header-option {
+  color: var(--dark-orange);
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  header-parent {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .header-hamburger {
+    display: block;
+  }
+  .header-parent {
+    width: 100%;
+    padding: 0 40px;
+    position: relative;
+  }
+  .header-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    transition: all 0.8s ease-out;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #1f2235;
+    z-index: 1000;
+    opacity: 0.5;
+  }
+  .header-option:hover, .selected-header-option:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+/* This is to ensure that even when not hovered, the cursor changes to a hand */
+.header-option, .selected-header-option {
+    cursor: pointer;
+}
+  .header-option-seperator {
+    margin: 0;
+  }
+  .selected-header-option {
+    color: var(--white);
+  }
+  .header-hamburger-bars {
+    font-size: 36px;
+    cursor: pointer;
+    margin: 0px 10px;
+    color: var(--white);
+  }
+  .show-hamburger-options {
+    left: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,169 @@
+
+.main-container1 {
+    min-height: fit-content;
+    margin: 50px 0 0 0;
+  }
+  
+  .central-form2 {
+
+    display:flex ;
+    flex-direction: row;
+    
+    
+  }
+  .ani-cont{    
+    border: #fff;
+    max-width: 40%;      
+      
+  }
+  
+  .animation-container {
+    flex: row;     
+    order: 1;
+    overflow: hidden;
+    grid-column: 1/6;   
+  }
+  
+  .education-container {
+    min-width: 55%;
+    background-color: #fff;
+    padding: 80px 50px 30px 30px;
+   
+    border-radius: 12px;
+    box-shadow: 0 0px 20px -2px #1f2235;
+    
+    
+    
+    /* margin-left: 20px; spacing between the animation and details */
+  }
+
+.education-container h3{
+    margin-bottom: 0px;
+}
+
+  
+  .education-details {
+    margin-bottom: 25px;
+    
+
+  }
+  
+
+  .education-details .heading {
+    font-weight: bold;
+    color: orangered;
+    margin-left: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    
+    padding-bottom: 20px;
+}
+
+.date {
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: -20px;
+}
+
+.degree {
+    margin: 3px 0 0 0;
+}
+
+  
+   @media screen and (max-width: 414px) {
+    .central-form {
+      flex-direction: column;
+    }
+  
+    .animation-container {
+      width: 100%;
+      order: 1;
+    }
+  
+    .education-container {
+      width: 100%;
+      margin-left: 0;
+      order: 2;
+    }
+  }
+  /* Media Queries for Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+  /* Making animation container bigger */
+  .animation-container {
+    width: 100%;  /* Setting it to full width */
+    margin-bottom: 40px;  /* Ensuring gap between animation and education container */
+  }
+
+  /* Decreasing text size for the education container */
+  .education-container {
+    font-size: 0.9rem;  /* Adjust this value based on your preference */
+    margin-top: 20px;
+    padding: 60px 40px 20px 20px;  
+  }
+
+  .education-container h6, .education-details .heading {
+    font-size: 1.1rem; /* Adjusting heading sizes */
+  }
+  
+  /* Spacing between the animation and education container */
+  .education-container {
+    margin-top: 20px;
+    padding: 60px 40px 20px 20px; /* Increased padding for better spacing */
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 414px) {
+  .central-form2 {
+    flex-direction: column;
+  }
+
+  /* Making animation container bigger */
+  .animation-container {
+    width: 100%;
+    order: 1;
+    margin-bottom: 15px; /* Ensuring gap between animation and education container */
+  }
+
+  .education-container {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+    font-size: 0.8rem;  /* Adjust this value based on your preference */
+  }
+}
+
+/* Media Queries for General Mobile Devices */
+@media screen and (max-width: 768px) {
+  .central-form2 {
+    flex-direction: column;
+  }
+
+  /* Making animation container bigger */
+  .animation-container {
+    width: 100%;
+    order: 1;
+    margin-bottom: 40px; /* Ensuring gap between animation and education container */
+  }
+
+  .education-container {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+    font-size: 0.85rem;  /* Adjust this value based on your preference */
+  }
+
+  .education-container h6, .education-details .heading {
+    font-size: 1.05rem; /* Adjusting heading sizes */
+  }
+}

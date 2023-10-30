@@ -1,0 +1,203 @@
+.main-container-02{
+  min-height: auto;
+  margin: 50px 0 0 0;
+  
+}
+.about-me-container{
+  /* padding: 0px; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  
+}
+.central-form3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.ani-cont1 {
+padding: 0px;
+}
+
+
+.animation-container {
+  flex: row;     
+  order: 1;
+  overflow: hidden;
+  /* grid-column: 1/6;  */
+   
+  margin: 0 auto;    
+  max-width: 90%;      
+}
+
+.about-me-container {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+.about-me-parent {
+  max-width: 100%;
+  width: auto;
+  /* overflow: auto; */
+}
+
+.about-me-card {
+  z-index: 1;
+  position: relative;
+  overflow: visible;
+  flex: 1; /* Make it take the available space */
+  background-color: #fff;
+  padding: 20px 20px 30px 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 20px #e12e16;
+  /* margin-right: 20px; */
+  width: 100%;
+}
+
+
+
+.about-me-details {
+  width: 100%;
+  text-align: justify;
+  /* padding: 1rem; */
+}
+.about-me-description {
+  font-size: 1rem;
+}
+.about-me-highlights {
+  margin: 30px 0;
+}
+.highlght-heading {
+  font-weight: bold;
+  
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  
+  margin: 5px 0;
+  font-size: 15px;
+}
+.highlight-heading span {
+  font-weight: bold; /* To make it bold */
+  font-size: 17px; /* Increase size, adjust as per your preference */
+}
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: #ff5823;
+  border-radius: 50%;
+}
+
+
+
+.about-me-options .highlighted-btn {
+  margin: 0 0 0 30px;
+}
+
+.btn.highlighted-btn:hover {  /* fixed typo here */
+  background-color: orange;
+  color: white; /* Text color on hover */
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+ 
+}
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-details {
+    width: 100%;
+  }
+  .ani-cont1 {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+}
+
+
+/* Media Queries for Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+  /* Making the animation container bigger and adding a gap below it */
+  .animation-container {
+    width: 100%;
+    margin-bottom: 30px;  /* Gap between the animation and the work experience container */
+  }
+
+  /* Decreasing the text size for better readability on tablet devices */
+  .about-me-description {
+    font-size: 0.9rem;
+  }
+
+  .highlight {
+    font-size: 0.9rem;
+  }
+
+  .highlight-heading span {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+
+  /* Adjusting the animation container for mobile view */
+  .animation-container {
+    width: 100%;
+    margin-bottom: 25px;  /* Gap between the animation and the work experience container */
+  }
+
+  /* Adjusting the text size for mobile view */
+  .about-me-description {
+    font-size: 0.8rem;
+  }
+
+  .central-form3{
+    padding: 0;
+  }
+  .about-me-card{
+    margin: 0;
+  }
+
+  .highlight {
+    font-size: 0.8rem;
+  }
+
+  .highlight-heading span {
+    font-size: 1rem;
+  }
+
+  
+}
+
+
+
