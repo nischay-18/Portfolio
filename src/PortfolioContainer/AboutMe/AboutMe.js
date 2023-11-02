@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import "./AboutMe.css";
 import lottie from 'lottie-web';
-import animationData from '../../images/animation_lo6emzfl.json'
+import animationData from '../../images/Animation - 1698619103837.json'
 import pdf from "../../assets/Resume.pdf"
 export default function AboutMe(props) {
   const animationContainer = useRef(null);

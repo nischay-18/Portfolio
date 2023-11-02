@@ -7,10 +7,12 @@
 }
 .footer-content {
   bottom: 20px; /* You can adjust this value to give more space */
+  padding: 30px;
 }
 .foorer-parent {
   width: 100%;
   height: 100%;
+  padding: 30px;
   max-width: 1920px;
 }
 .footer-parent img {

@@ -11,12 +11,14 @@ import "./Header.css";
 export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
   const [showHeaderOptions, setShowHeaderOptions] = useState(false);
-
+  
   const updateCurrentScreen = (currentScreen) => {
     if (!currentScreen || !currentScreen.screenInView) return;
 
     let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
     if (screenIndex < 0) return;
+
+    setSelectedScreen(screenIndex);
   };
   let currentScreenSubscription =
     ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
@@ -58,10 +60,7 @@ export default function Header() {
   }, [currentScreenSubscription]);
 
   return (
-    <div
-      className="header-container"
-      onClick={() => setShowHeaderOptions(!showHeaderOptions)}
-    >
+    <div className="header-container sticky">
       <div className="header-parent">
         <div
           className="header-hamburger"
@@ -69,9 +68,9 @@ export default function Header() {
         >
           <FontAwesomeIcon className="header-hmburger-bars" icon={faBars} />
         </div>
-        <div className="header-logo header-nischay" onClick={() => window.location.href = '/'}>
-       <span>NISCHAY</span>
-      </div>
+        <div className="header-logo" onClick={() => window.location.href = '/'}>
+          <span>NISCHAY</span>
+        </div>
         <div
           className={
             showHeaderOptions

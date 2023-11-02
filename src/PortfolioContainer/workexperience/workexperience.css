@@ -96,6 +96,7 @@
   /* Adjustments to the animation container */
   .animation-container {
       max-width: 100%;  /* Utilize full width for better visibility */
+      max-height: 100%;
       margin-bottom: 15px;  /* Gap between the animation and the work experience container */
   }
 
