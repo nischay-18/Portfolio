@@ -121,12 +121,15 @@ const ProjectCard = ({ title, description, technologies, image, githubLink }) =>
 
 const projects = () => (
     <div id="Projects">
-    <div className="main-container-pr projects-main-container container">    
+    <div className="main-container-proj1">
+    <div className="projects-main-container1"> 
+      
     <ScreenHeading subHeading={""} title={"Projects"} />
-    <div className="projects-central-form1">
+    <div className="projects-central-form1 container">
         {projectsData.map((data, index) => (
             <ProjectCard key={index} {...data} />
         ))}
+    </div>
     </div>
     </div>
     </div>
