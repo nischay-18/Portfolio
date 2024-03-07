@@ -84,7 +84,7 @@
 }
 
 .profie-social a {
-  margin: 0 0.5rem; /* Adjust the margin as needed */
+  margin: 3rem, 3rem; /* Adjust the margin as needed */
   flex: 1; /* This allows the buttons to grow and take up equal space */
 }
 
