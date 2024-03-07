@@ -76,6 +76,12 @@
 .colz .cols-icon i:hover {
   transform: scale(1.5);
 }
+.profile-social {
+  display: flex;
+  justify-content: space-around; /* This will distribute space around the links */
+  align-items: center;
+  padding: 0.5rem;
+}
 .profile-options {
   display: flex;
   justify-content: space-between; /* This spreads out the children evenly */
@@ -83,7 +89,7 @@
   width: 100%; /* Ensure the container takes full width */
 }
 
-.profie-social a {
+.profie-social a  {
   margin: 3rem, 3rem; /* Adjust the margin as needed */
   flex: 1; /* This allows the buttons to grow and take up equal space */
 }
