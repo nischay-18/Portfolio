@@ -81,6 +81,7 @@
   justify-content: space-around; /* This will distribute space around the links */
   align-items: center;
   padding: 0.5rem;
+  gap: 15px;
 }
 .profile-options {
   display: flex;
