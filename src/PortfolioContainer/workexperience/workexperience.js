@@ -41,7 +41,7 @@ export default function WorkExperience(props) {
       <div className="job-details">
         <div className="header">
             <h6 className="heading">The World Bank Group</h6>
-            <span className="date">January 2024 - Present</span>
+            <span className="date">January 2024 - May 2024</span>
         </div>
         <p className="position">Data Science Consultant</p>
      <div className="hi">
@@ -57,9 +57,9 @@ export default function WorkExperience(props) {
     <div className="job-details">
         <div className="header">
             <h6 className="heading">The George Washington University, USA</h6>
-            <span className="date">March 2023 - Present</span>
+            <span className="date">March 2023 - May 2024</span>
         </div>
-        <p className="position">Student Communications Assistant</p>
+        <p className="position">Web Analyst</p>
      <div className="hi">
         <ul>
             <li>Managed and optimized content across GW Engineering and departmental websites using HTML and Drupal.</li>
@@ -73,9 +73,9 @@ export default function WorkExperience(props) {
     <div className="job-details">
         <div className="header">
             <h6 className="heading">GTCUBE</h6>
-            <span className="date">May 2021 – September 2021</span>
+            <span className="date">May 2021 – July 2022</span>
         </div>
-        <p className="position">Data Science Intern</p>
+        <p className="position">Data Scientist</p>
         <ul>
             <li>Developed and optimized machine learning models for categorizing universities, enhancing student application recommendations, and improving accuracy by 20%.</li>
             <li>Leveraged predictive analytics for sales trend insights, boosting sales by 25% and guiding course and pricing strategy.</li>
