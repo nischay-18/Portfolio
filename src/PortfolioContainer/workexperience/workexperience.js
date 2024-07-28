@@ -57,7 +57,7 @@ export default function WorkExperience(props) {
     <div className="job-details">
         <div className="header">
             <h6 className="heading">The George Washington University, USA</h6>
-            <span className="date">March 2023 - May 2024</span>
+            <span className="date">March 2023 - May 2024 </span>
         </div>
         <p className="position">Web Analyst</p>
      <div className="hi">
@@ -72,7 +72,7 @@ export default function WorkExperience(props) {
 
     <div className="job-details">
         <div className="header">
-            <h6 className="heading">GTCUBE</h6>
+            <h6 className="heading">GT CUBE</h6>
             <span className="date">May 2021 – July 2022</span>
         </div>
         <p className="position">Data Scientist</p>
