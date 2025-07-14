@@ -42,12 +42,14 @@ export default function WorkExperience(props) {
             <h6 className="heading">DC Water</h6>
             <span className="date">October 2024 - Present</span>
         </div>
+        <p className="position">Data Consultant</p>
+        </div>
         <div className="job-details">
         <div className="header">
             <h6 className="heading">GW, EEMI</h6>
             <span className="date">July 2024 - June 2025</span>
         </div>
-        <p className="position">Data Consultant</p>
+        <p className="position">Analyst</p>
     </div>
       <div className="job-details">
         <div className="header">
@@ -68,7 +70,7 @@ export default function WorkExperience(props) {
 </div>
       </div>
     </div>
-    </div>
+    
    
   );
 }
